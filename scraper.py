@@ -259,12 +259,22 @@ def save_status(status):
     except Exception as e:
         print(f"Error al guardar el archivo de estado: {e}")
 
+import re
+
 def normalize_status(text):
-    """Limpia el texto para una comparación más robusta."""
+    """Limpia el texto para una comparación más robusta, ignorando fechas."""
     if not text:
         return ""
-    # Quitamos espacios extra, saltos de línea y normalizamos a minúsculas
-    return " ".join(text.lower().split()).strip()
+    
+    # Normalizamos a minúsculas y quitamos espacios extra
+    text = " ".join(text.lower().split()).strip()
+    
+    # Eliminamos fechas en formato DD/MM/YYYY para evitar falsos positivos
+    # por actualizaciones de fecha en el portal sin cambio de estado real.
+    text = re.sub(r'\d{1,2}/\d{1,2}/\d{4}', '', text)
+    
+    # Limpiamos espacios residuales tras quitar las fechas
+    return " ".join(text.split()).strip()
 
 async def main():
     current_status = await check_status()
