@@ -1,7 +1,7 @@
 # 🤖 Migraciones Argentina Status Bot 🚀
 
 Este proyecto es un **Script de Automatización Inteligente** diseñado para monitorear el estado de trámites de ciudadanía en el portal de Migraciones Argentina de manera automática y eficiente.
-
+Acá un video del bot funcionando https://youtu.be/zYviBpVFUm4
 ---
 
 ## 📖 La Historia Detrás del Proyecto
@@ -9,8 +9,7 @@ Este script nació de una necesidad cotidiana: la tediosa tarea de entrar manual
 
 Lo que comenzó como una solución personal para ahorrar tiempo, se convirtió en un **proyecto de estudio sobre automatización moderna**, explorando cómo las herramientas de IA y las tecnologías de scraping pueden trabajar en conjunto para simplificar procesos burocráticos repetitivos. 
 
-> [!NOTE]
-> Este proyecto fue desarrollado en colaboración entre un desarrollador y su asistente de IA (**Antigravity**), demostrando el poder de la programación en pareja (*Pair Programming*) para resolver problemas reales del día a día.
+> Este proyecto fue desarrollado mi asistente de IA (**Antigravity**), demostrando que manejando los fundamentos podemos crear cosas que aporten valor!
 
 ---
 
@@ -52,5 +51,4 @@ Si bien este script monitoriza un trámite específico, la arquitectura es **esc
 ## ⚙️ Configuración Rápida
 Para implementarlo tú mismo, consulta la [Guía de Configuración Local](./walkthrough.md) o la [Guía para Linux VM](./VM_SETUP_LINUX.md).
 
----
-*Desarrollado con ❤️ y un poco de ayuda de la IA.*
+-- Desarrollado con ❤️ 
